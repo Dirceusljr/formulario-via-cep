@@ -1,0 +1,38 @@
+body {
+    background-color: bisque;
+    width: 100vh;
+    height: 100vh;
+}
+
+.principal {
+    display: flex;
+    height: auto;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__formulario {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    align-items: center;
+}
+
+.linha {
+    margin: 1em auto;
+    color: aqua;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formulario__campo {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
