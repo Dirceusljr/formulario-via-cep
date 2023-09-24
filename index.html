@@ -11,36 +11,39 @@
 </head>
 <body class="container">
     <section class="principal">
-        <img src="https://bosscoworking.com.br/wp-content/uploads/2019/11/escritorio-virtual-em-sao-caetano-do-sul.jpg" alt="imagem do google map">
+        <img src="imagem.svg" alt="imagem do google map">
         <div class="container__formulario">
             <form action="#" class="formulario">
                 <h1>Preencha seu endereço</h1>
                 <hr class="linha">
                 <div class="formulario__campo">
-                    <label for="">CEP</label>
-                    <input type="number" placeholder="Ex: 12345678">
+                    <label for="cep">CEP</label>
+                    <input id="cep" name="cep" placeholder="Ex: 12345678" required>
+                    <div id="erro"></div>
                 </div>
                 <div class="formulario__campo">
-                    <label for="">Logradouro</label>
-                    <input type="text" placeholder="Ex: Rua X, Travessa Y, Av. z">
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="logradouro" placeholder="Ex: Rua X, Travessa Y, Av. z" required>
                 </div>
                 <div class="formulario__campo">
-                    <label for="">Número</label>
-                    <input type="number" placeholder="Ex: 123">
+                    <label for="numero">Número</label>
+                    <input placeholder="Ex: 123" id="numero" name="numero" required>
                 </div>
                 <div class="formulario__campo">
-                    <label for="">Bairro</label>
-                    <input type="text" placeholder="Ex: Quintinho Cunha">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" placeholder="Ex: Quintinho Cunha" id="bairro" name="bairro" required>
                 </div>
                 <div class="formulario__campo">
-                    <label for="">Cidade</label>
-                    <input type="text" placeholder="Ex: FortalCity">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" placeholder="Ex: FortalCity" id="cidade" name="cidade" required>
                 </div>
                 <div class="formulario__campo">
-                    <label for="">UF</label>
-                    <input type="text" placeholder="Ex: CE">
+                    <label for="uf">UF</label>
+                    <input type="text" placeholder="Ex: CE" id="uf" name="uf" required>
                 </div>
-                <button type="button" class="btn btn-primary">PRONTO!</button>
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary">PRONTO!</button>
+                </div>
             </form>
         </div>
 

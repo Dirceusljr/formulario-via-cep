@@ -1,38 +1,45 @@
-body {
-    background-color: bisque;
-    width: 100vh;
+.container {
+    width: 100vw;
     height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #dedede;
 }
 
 .principal {
     display: flex;
-    height: auto;
-    gap: 1em;
     justify-content: center;
-    align-items: center;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 1.5em;
 }
 
 .container__formulario {
-    display: flex;
-    background-color: white;
-    border-radius: 10px;
-    padding: 1em;
-    align-items: center;
-}
-
-.linha {
-    margin: 1em auto;
-    color: aqua;
+    width: 50%;
 }
 
 .formulario {
-    display: flex;
-    flex-direction: column;
+    background-color: white;
+    border: transparent;
+    padding: 1rem;
+    border-radius: 10px;
+}
 
+img {
+    width: 50%;
 }
 
 .formulario__campo {
     display: flex;
     flex-direction: column;
-    margin: 1em;
+    margin: 1rem 0;
+    width: auto;
+}
+
+input {
+    border: solid #d4d4d6 1px;
+    border-radius: 5px;
 }
